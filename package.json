@@ -1,0 +1,17 @@
+{
+  "name": "bumpver",
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": {
+    "bumpver": "cli/index.js"
+  },
+  "scripts": {},
+  "repository": "https://github.com/simonpai/bumpver",
+  "license": "MIT",
+  "contributors": [
+    "simonpai <simon.pai@gmail.com>"
+  ],
+  "devDependencies": {
+    "yargs": "^17.7.2"
+  }
+}
