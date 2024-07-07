@@ -1,12 +1,12 @@
 {
-  "name": "bumpver",
+  "name": "bumpvr",
   "type": "module",
   "main": "lib/index.js",
   "bin": {
-    "bumpver": "cli/index.js"
+    "bumpv": "cli/index.js"
   },
   "scripts": {},
-  "repository": "https://github.com/simonpai/bumpver",
+  "repository": "https://github.com/simonpai/bumpvr",
   "license": "MIT",
   "contributors": [
     "simonpai <simon.pai@gmail.com>"

@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 import yargs from 'yargs/yargs';
 import { hideBin } from 'yargs/helpers';
-import bumpver from '../lib/index.js';
-import bumpverSync from '../lib/sync.js';
+import bumpvr from '../lib/index.js';
 import version from '../lib/version.js';
 
 process.stdout.on('error', err => err.code == 'EPIPE' && process.exit(0));
@@ -10,7 +9,7 @@ process.stdout.on('error', err => err.code == 'EPIPE' && process.exit(0));
 const { value, sync, ...argv } = yargs(hideBin(process.argv))
   .option('sync', {
     alias: 's',
-    describe: 'Execute sync variant of bumpver',
+    describe: 'Execute sync variant of bumpvr',
     type: 'boolean',
     default: false,
   })
@@ -31,7 +30,7 @@ const { value, sync, ...argv } = yargs(hideBin(process.argv))
   .parse();
 
 if (sync) {
-  bumpverSync(value, argv);
+  bumpvr.sync(value, argv);
 } else {
-  await bumpver(value, argv);
+  await bumpvr(value, argv);
 }

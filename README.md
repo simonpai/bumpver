@@ -1,6 +1,6 @@
-# bumpver
+# bumpvr
 
-`bumpver` is a tool for automating the process of bumping version numbers in your Node.js project's package.json.
+`bumpvr` is a tool for automating the process of bumping version numbers in your Node.js project's package.json.
 
 * Supports NPM workspaces (monorepo).
 * Supports replacing local depenedencies (`file:...`) among NPM workspace projects.
@@ -8,19 +8,19 @@
 ## Installation
 
 ```bash
-npm install -g bumpver
+npm install -g bumpvr
 ```
 
 ## Usage
 
 ```bash
-bumpver [options] <version>
+bumpvr [options] <version>
 ```
 
 For example,
 
 ```bash
-bumpver 1.2.3
+bumpvr 1.2.3
 ```
 
 will bump the version number in your package.json and in the package.json files of all the projects in your NPM workspace to `1.2.3`.
