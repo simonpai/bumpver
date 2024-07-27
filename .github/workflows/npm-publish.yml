@@ -13,7 +13,7 @@ jobs:
         id: version
         run: |
           VERSION=${{ github.event.release.tag_name }}
-          echo "::set-output name=version::$(echo $VERSION | sed -e 's/v//gI')"
+          echo "version=$(echo $VERSION | sed -e 's/v//gI')" >> $GITHUB_OUTPUT
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
