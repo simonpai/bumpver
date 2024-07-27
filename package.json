@@ -3,7 +3,7 @@
   "type": "module",
   "main": "lib/index.js",
   "bin": {
-    "bumpv": "cli/index.js"
+    "bumpvr": "cli/index.js"
   },
   "scripts": {},
   "repository": "https://github.com/simonpai/bumpvr",
