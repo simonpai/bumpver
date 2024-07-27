@@ -11,7 +11,7 @@
   "contributors": [
     "simonpai <simon.pai@gmail.com>"
   ],
-  "devDependencies": {
+  "dependencies": {
     "yargs": "^17.7.2"
   }
 }
